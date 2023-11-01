@@ -1,0 +1,35 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #b59e7d;
+  font-size: 5rem;
+  padding: 2rem 0rem;
+  margin: 2rem;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  color: #b59e7d;
+  margin-top: 5rem;
+}
+p {
+  display: block;
+  justify-content: center;
+  margin: 1rem 5rem 2rem 10rem;
+}
+.img {
+  height: 40rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #b59e7d;
+}
+.worddoc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../Images/logo.png" />
+    <link rel="stylesheet" href="../css/signin.css">
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" /> 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="navimg" href="../"
+          ><img class="logo" src="../Images/logo Nathan$.png" alt="Homepage" width="150"
+        /></a>
+        <ul>
+          <li><a href="../cv/">Over mij</a></li>
+          <li><a href="../projecten/">Projecten</a></li>
+          <li><a href="./contact/contactform.php">Contact</a></li>
+          <li><a href="../blog/">Blog</a></li>
+        </ul>
+        <div class="button">
+        <form style="display: inline" action="../signin/" method="get" >
+        <button class="vibrate-1">Sign in</button>
+        </div>
+      </nav>
+      <main>
+        <div class="username">
+            <label for=" name">name</label>
+            <input type="text" value="" id="name" name="name">
+        </div>
+        <div class="password">
+            <label for="pass">password</label>
+            <input type="password" value="" id="pass" name="pass">
+        </div>
+            <input type="submit" name="bntSubmit" value="send">
+      </main>
+    </header>

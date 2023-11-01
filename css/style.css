@@ -1,0 +1,101 @@
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0rem 5%;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  height: 6rem;
+  font-size: 1.6rem;
+  background-color: #0d1722;
+}
+
+#navimg {
+  cursor: pointer;
+  flex-grow: 1;
+}
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+  list-style: none;
+}
+
+nav li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  padding: 0 0.2rem;
+  color: #edf0f1;
+}
+
+nav li a:hover {
+  color: #0088a9;
+}
+button {
+  padding: 0.7rem 1.5rem;
+  background-color: rgba(0, 136, 169, 1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: not-allowed;
+  transition: all 0.3s ease 0s;
+  margin-left: 4rem;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/*¨BODY*/
+
+body {
+  font-size: 1.6rem;
+  background-color: #051723;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+.vibrate-1 {
+  animation: none; /* Reset the animation initially */
+  transition: transform 0.3s ease; /* Add a transition for smooth effect */
+}
+
+.vibrate-1:hover {
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 4rem;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  background-color: #4c6f86;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+label {
+  display: block;
+  margin-top: 2rem;
+}
+input[type="email"],
+text {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #db9632;
+  border-radius: 1rem;
+}
+
+.error {
+  color: red;
+}
+form {
+  margin: 0;
+}
+input[type="submit"] {
+  background-color: #db9632;
+  color: white;
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #db9632;
+}

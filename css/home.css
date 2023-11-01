@@ -1,0 +1,219 @@
+Body {
+  font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
+}
+.article {
+  height: 100vh;
+}
+.mijzelf {
+  display: flex;
+  padding-left: clamp(2rem, 27vw, 27rem);
+  padding-top: clamp(2rem, 12vw, 12rem);
+  margin-bottom: 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shadow-pop-br {
+  animation: shadow-pop-br 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+@keyframes shadow-pop-br {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e,
+      4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e,
+      8px 8px #3e3e3e;
+    transform: translateX(-8px) translateY(-8px);
+  }
+}
+
+/* de animation is niet door mij */
+
+.mijzelf img {
+  height: 45vh;
+  margin-left: clamp(2rem, 4vw, 4rem);
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+}
+
+.mijzelf h1,
+h2 {
+  font-size: 2.8rem;
+}
+#hide_hover {
+  display: inline-block;
+  max-width: 0%;
+  vertical-align: bottom;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 1s ease-in-out;
+}
+p:hover #hide_hover {
+  max-width: 100%;
+}
+.timeline {
+  border-left: 3px solid #db9632;
+  height: 280%;
+  position: absolute;
+  left: clamp(2rem, 21.2vw, 21.2rem);
+  top: 14rem;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #db9632;
+  border-color: #db9632;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: clamp(2rem, 20.6vw, 20.6rem);
+  top: 14rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.cardalg {
+  margin: 1rem 1rem;
+  width: 40rem;
+}
+.cards img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 20rem;
+  z-index: 4;
+}
+.content {
+  padding: 1rem;
+}
+.overlay-link {
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.projects h2 {
+  position: relative;
+  left: clamp(10rem, 23vw, 23rem);
+  top: 4.3rem;
+  color: gray;
+}
+footer {
+  margin-top: 25rem;
+}
+.dot2 {
+  height: 15px;
+  width: 15px;
+  background-color: #db9632;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: clamp(1rem, 20.6vw, 20.6rem);
+  top: -0.6rem;
+}
+
+.card1 {
+  margin-left: clamp(2rem, 17vw, 17rem);
+  margin-top: clamp(0rem, 5vh, 5rem);
+  padding-left: 10rem;
+}
+.card2 {
+  margin-left: clamp(2rem, 3vw, 3rem);
+  margin-top: clamp(0rem, 5vh, 5rem);
+  padding-left: 10rem;
+}
+.card3 {
+  margin-left: clamp(2rem, 17vw, 17rem);
+  padding-left: 10rem;
+  margin-top: clamp(2rem, 0vh, 0rem);
+}
+.card4 {
+  margin-top: 2rem;
+  margin-left: clamp(2rem, 3vw, 3rem);
+  padding-left: 10rem;
+}
+.card5 {
+  margin-left: clamp(2rem, 17vw, 17rem);
+  padding-left: 10rem;
+  margin-top: 5rem;
+}
+.card6 {
+  margin-top: 5rem;
+  margin-left: clamp(2rem, 3vw, 3rem);
+  padding-left: 10rem;
+}
+.textimg {
+  position: relative;
+  top: 7rem;
+  right: 15rem;
+  left: -5rem;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  z-index: 5;
+  background-color: #4c6f86;
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+}
+.card1 :hover {
+  transform: scale(1.03);
+}
+.card2 :hover {
+  transform: scale(1.03);
+}
+.card3 :hover {
+  transform: scale(1.03);
+}
+.card4 :hover {
+  transform: scale(1.03);
+}
+.card5 :hover {
+  transform: scale(1.03);
+}
+.card6 :hover {
+  transform: scale(1.03);
+}
+.imgproject {
+  z-index: 4;
+}
+.blog h2 {
+  position: relative;
+  left: clamp(10rem, 23vw, 23rem);
+  top: 3rem;
+  color: gray;
+}
+.blog1 {
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: clamp(2rem, 25vw, 25rem);
+  margin-top: 6rem;
+  border: 1px black solid;
+  margin-right: clamp(2rem, 30vw, 30rem);
+  padding: 1rem;
+  padding-top: 0rem;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+}
+.blog1 p {
+  display: flex;
+}
+.blog1 h3 {
+  margin-bottom: 0rem;
+}
+.dot3 {
+  height: 15px;
+  width: 15px;
+  background-color: #db9632;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: clamp(1rem, 20.6vw, 20.6rem);
+  top: -2rem;
+}

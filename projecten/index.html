@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../Images/logo.png" />
+    <link rel="stylesheet" href="../css/project.css" />
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="navimg" href="../"
+          ><img
+            class="logo"
+            src="../Images/logo Nathan$.png"
+            alt="Homepage"
+            width="150"
+        /></a>
+        <ul>
+          <li><a href="../cv/">Over mij</a></li>
+          <li><a href="../projecten/">Projecten</a></li>
+          <li><a href="../contact/contactform.php">Contact</a></li>
+          <li><a href="../blog/">Blog</a></li>
+        </ul>
+        <div class="button">
+          <form style="display: inline" action="../signin/" method="get"></form>
+          <button class="vibrate-1">Sign in</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>My work</h1>
+        <div class="filter-bar">
+          <span class="filter filter1" data-value="filter1">All</span>
+          <span class="filter filter2" data-value="filter2">Elektronica</span>
+          <span class="filter filter3" data-value="filter3">design</span>
+          <span class="filter filter4" data-value="filter4">webdesign</span>
+        </div>
+        <div class="cards">
+          <ul class="item-list">
+            <li class="item" data-filters="filter1 filter2">
+              <h3>Gip</h3>
+              <a href="./project gip/project1.html"
+                ><img src="../Images/alarmsysteem2.jpg" alt="random img"
+              /></a>
+              <div class="content">
+                <a class="underimgclick" href="./project gip/project1.html"
+                  >Lees meer</a
+                >
+              </div>
+            </li>
+            <li class="item" data-filters="filter1 filter2">
+              <h3>Multigameboard</h3>
+              <a href="#"
+                ><img src="../Images/multigameboard.jpg" alt="random img"
+              /></a>
+              <div class="content">
+                <a class="underimgclick" href="#">Lees meer</a>
+              </div>
+            </li>
+            <li class="item" data-filters="filter1 filter4">
+              <h3>Wordpress</h3>
+              <a href="#"
+                ><img src="../Images/wordpress.webp" alt="random img"
+              /></a>
+              <div class="content">
+                <a class="underimgclick" href="#">lees meer</a>
+              </div>
+            </li>
+            <li class="item" data-filters="filter1 filter4">
+              <h3>Card title 4</h3>
+              <a href="#"
+                ><img src="https://picsum.photos/350/150?1" alt="random img"
+              /></a>
+              <div class="content">
+                <a class="underimgclick" href="#">Lees meer</a>
+              </div>
+            </li>
+            <li class="item" data-filters="filter1">
+              <h3>Card title 5</h3>
+              <a href="#"
+                ><img src="https://picsum.photos/350/150?1" alt="random img"
+              /></a>
+              <div class="content">
+                <a class="underimgclick" href="#">Lees meer</a>
+              </div>
+            </li>
+            <li class="item" data-filters="filter1">
+              <h3>Card title 6</h3>
+              <a href="#"
+                ><img src="https://picsum.photos/350/150?1" alt="random img"
+              /></a>
+              <div class="content">
+                <a class="underimgclick" href="#">Lees meer</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const filters = document.querySelectorAll(".filter");
+          const itemList = document.querySelectorAll(".item");
+
+          filters.forEach(function (filter) {
+            filter.addEventListener("click", function () {
+              const selectedFilter = filter.getAttribute("data-value");
+
+              itemList.forEach(function (item) {
+                const itemFilters = item
+                  .getAttribute("data-filters")
+                  .split(" ");
+                const isItemVisible = itemFilters.includes(selectedFilter);
+                item.style.display = isItemVisible ? "block" : "none";
+              });
+            });
+          });
+        });
+      </script>
+    </main>
+    <footer></footer>
+  </body>
+</html>
