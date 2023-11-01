@@ -6,9 +6,9 @@ ini_set('display_errors', 1);
 
 // Constanten (connectie-instellingen databank)
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'contact');
+define('DB_USER', 'Nathan_Hommez');
+define('DB_PASS', 'M?2mi7n86');
+define('DB_NAME', 'nathan_hommez_contact');
 
 date_default_timezone_set('Europe/Brussels');
 
