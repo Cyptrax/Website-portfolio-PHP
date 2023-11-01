@@ -1,35 +1,45 @@
 h1 {
   display: flex;
   justify-content: center;
-  color: #b59e7d;
-  font-size: 5rem;
+  color: #db9632;
+  font-size: 7rem;
   padding: 2rem 0rem;
   margin: 2rem;
-}
-h2 {
-  display: flex;
-  justify-content: center;
-  color: #b59e7d;
-  margin-top: 5rem;
-}
-p {
-  display: block;
-  justify-content: center;
-  margin: 1rem 5rem 2rem 10rem;
-}
-.img {
-  height: 40rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 h3 {
   display: flex;
   justify-content: center;
-  color: #b59e7d;
+  color: #db9632;
 }
 .worddoc {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.project-container img {
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  height: 35rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info-container {
+  display: flex;
+}
+.info-container img {
+  margin-top: 15rem;
+}
+.text-container {
+  margin-top: 7rem;
+  margin-left: clamp(2rem, 15vw, 15rem);
+}
+.text-container h2 {
+  display: flex;
+  color: #db9632;
+  font-size: 4rem;
+}
+.text-container p {
+  max-width: 80rem;
+  font-size: 2rem;
 }

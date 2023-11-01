@@ -22,7 +22,7 @@
 <body>
     <header>
         <nav>
-            <a id="navimg" href="../"><img class="logo" src="../Images/logo Nathan$.png" alt="Homepage"
+            <a id="navimg" href="../"><img class="logo" src="../Images/logo_Nathan.png" alt="Homepage"
                     width="150" /></a>
             <ul>
                 <li><a href="../cv/">Over mij</a></li>
