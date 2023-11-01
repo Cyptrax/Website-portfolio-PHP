@@ -1,4 +1,144 @@
-h1 {
-  margin-top: 0;
-  padding-top: 2rem;
+* {
+  box-sizing: border-box;
+}
+.cv-container {
+  margin: 5rem 20rem 10rem 20rem;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+}
+.container-mij img {
+  border-radius: 1rem;
+  max-width: 30rem;
+}
+.container-mij {
+  background-color: #4c6f86;
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
+}
+.container-mij-text {
+  margin-left: 5rem;
+  color: #db9632;
+  font-size: 2.3rem;
+}
+h2 {
+  color: #db9632;
+}
+.container-overmij {
+  display: flex;
+  margin: 1rem;
+  border-bottom: solid;
+  padding-bottom: 1rem;
+}
+.container-overmij p {
+  max-width: 60rem;
+  margin-left: 3rem;
+}
+.socials {
+  margin: 5rem 0rem 0rem 5rem;
+}
+.socials p {
+  margin: 0;
+}
+.container-opleiding {
+  margin: 1rem;
+  line-height: 2.7rem;
+}
+.container-opleiding div {
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  padding: 0.5rem;
+  margin: auto 3rem auto 3rem;
+  border-left: 0.3rem solid #db9632;
+}
+p {
+  margin: 0;
+}
+.container-opleiding div::first-line {
+  font-style: italic;
+  font-size: 2.2rem;
+}
+.container-opleiding div :nth-child(2) {
+  color: gray;
+}
+.container-opleiding img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0.4rem auto 0.4rem auto;
+}
+.container-werk {
+  margin: 1rem;
+  line-height: 2.7rem;
+}
+.container-werk div {
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  padding: 0.5rem;
+  margin: auto 3rem auto 3rem;
+  border-left: 0.3rem solid #db9632;
+}
+p {
+  margin: 0;
+}
+.container-werk div::first-line {
+  font-style: italic;
+  font-size: 2.2rem;
+}
+.jaar {
+  color: gray;
+}
+.container-werk img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0.4rem auto 0.4rem auto;
+}
+.container-vaardigheden {
+  margin: 1rem;
+}
+.container-vaardigheden-bar {
+  display: flex;
+  margin-left: 3rem;
+}
+.eerstehelft {
+  width: 50%;
+}
+.tweedehelft {
+  margin-left: 3rem;
+  margin-right: 2rem;
+  width: 50%;
+}
+.bar {
+  position: relative;
+  background-color: rgb(181, 181, 181);
+  height: 2rem;
+  max-width: 30rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+.bar1 :first-child {
+  position: relative;
+  height: 2rem;
+  max-width: 70%;
+  border-radius: 1rem;
+  color: blue;
+  z-index: 5;
+  margin: 0.3rem 0rem;
+}
+
+.bar2 :first-child {
+  position: relative;
+  height: 2rem;
+  max-width: 70%;
+  border-radius: 1rem;
+  color: blue;
+  z-index: 5;
+}
+.talen {
+  margin-left: 3rem;
+}
+.container-talen {
+  margin: 1rem;
 }

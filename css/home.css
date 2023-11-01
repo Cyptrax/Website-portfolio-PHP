@@ -53,9 +53,9 @@ h2 {
 p:hover #hide_hover {
   max-width: 100%;
 }
-.timeline {
+.contianer-timeline {
   border-left: 3px solid #db9632;
-  height: 280%;
+  height: 190rem;
   position: absolute;
   left: clamp(2rem, 21.2vw, 21.2rem);
   top: 14rem;
@@ -99,7 +99,7 @@ p:hover #hide_hover {
   overflow: hidden;
   white-space: nowrap;
 }
-.projects h2 {
+.container-projects h2 {
   position: relative;
   left: clamp(10rem, 23vw, 23rem);
   top: 4.3rem;
@@ -216,4 +216,7 @@ footer {
   position: relative;
   left: clamp(1rem, 20.6vw, 20.6rem);
   top: -2rem;
+}
+.wordpress {
+  filter: invert(1);
 }
