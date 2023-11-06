@@ -137,6 +137,11 @@ input[name="filter"]:checked + label {
   position: relative;
   bottom: -3rem;
 }
+@media only screen and (max-width: 796px) {
+  .item1 {
+    bottom: 0rem;
+  }
+}
 h2 {
   text-align: center;
 }

@@ -55,34 +55,14 @@ p:hover #hide_hover {
 }
 .contianer-timeline {
   border-left: 0.188rem solid #db9632;
-  height: 215%;
+  height: 212rem;
   position: absolute;
   left: clamp(2rem, 21.2vw, 21.2rem);
   top: 14rem;
 }
-@media only screen and (max-width: 1422px) {
-  .contianer-timeline {
-    height: 217%;
-  }
-}
 @media only screen and (max-width: 1256px) {
   .contianer-timeline {
-    height: 298%;
-  }
-}
-@media only screen and (max-width: 1176px) {
-  .contianer-timeline {
-    height: 300%;
-  }
-}
-@media only screen and (max-width: 1047px) {
-  .contianer-timeline {
-    height: 302%;
-  }
-}
-@media only screen and (max-width: 1017px) {
-  .contianer-timeline {
-    height: 304%;
+    height: 410%;
   }
 }
 .dot {
