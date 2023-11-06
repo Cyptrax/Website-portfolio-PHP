@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>website portfolio</title>
-    <link rel="stylesheet home" href="./css/home.css" />
     <link rel="stylesheet nav" href="./css/style.css" />
+    <link rel="stylesheet home" href="./css/home.css" />
     <link rel="icon" href="./Images/logo.png" />
 
     <style>
@@ -23,22 +23,24 @@
             width="150"
         /></a>
         <ul>
+          <li><a href="./">Home</a></li>
           <li><a href="./cv/">Over mij</a></li>
           <li><a href="./projecten/">Projecten</a></li>
           <li><a href="./contact/contactform.php">Contact</a></li>
           <li><a href="./blog/">Blog</a></li>
         </ul>
-        <div class="button">
-          <form style="display: inline" action="./signin/" method="get"></form>
-          <button class="vibrate-1">Sign in</button>
-        </div>
+        <form style="display: inline" action="./" method="get">
+          <button class="vibrate-1 button">Sign in</button>
+        </form>
       </nav>
     </header>
     <main>
       <section class="mijzelf">
         <div class="textinfo">
-          <h1>hallo, ik ben Nathan Hommez</h1>
-          <h1>en ik ben een Student elektronica ict!</h1>
+          <h1>
+            hallo, ik ben Nathan Hommez <br />
+            en ik ben een Student elektronica ict!
+          </h1>
           <p>
             Scroll or hover me
             <span id="hide_hover">to know more about me</span>!
@@ -54,10 +56,10 @@
       </section>
       <div class="contianer-timeline"></div>
       <span class="dot"></span>
-      <div class="container-projects">
+      <section class="container-projects">
         <h2>&lt;Projects&gt;</h2>
         <span class="dot2"></span>
-        <div class="cards">
+        <section class="cards">
           <div class="gencard card1">
             <a href="./projecten/" class="textimg">Gip project</a>
             <div class="cardalg">
@@ -86,7 +88,7 @@
               <a href="./projecten/"
                 ><img
                   class="shadow-pop"
-                  src="./Images/wordpress.webp"
+                  src="./Images/wordpress-inverted.png"
                   alt="project gip"
               /></a>
             </div>
@@ -124,8 +126,8 @@
               /></a>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
       <section class="blog">
         <h2>&lt;Blogposts&gt;</h2>
         <span class="dot3"></span>
@@ -140,11 +142,67 @@
           <a href="./blog#blog1">Click hier voor meer info</a>
         </div>
       </section>
+      <section class="container-contactmij">
+        <h2>&lt;Contacteer mij&gt;</h2>
+        <span class="dot4"></span>
+        <div class="contactmij-text">
+          <p>Find me on:</p>
+          <div class="container-insta center">
+            <a href="https://www.instagram.com/nathanhommez/"
+              ><img
+                src="./Images/instagram-icon.png"
+                alt="instagram icon"
+                width="25"
+            /></a>
+            <a href="https://www.instagram.com/nathanhommez/"
+              >instagram: Nathan Hommez</a
+            >
+          </div>
+          <div class="container-email center">
+            <a href="mailto:NathanHommez@gmail.com"
+              ><img src="./Images/email-icon.png" alt="email icon" width="25"
+            /></a>
+            <a href="mailto:NathanHommez@gmail.com">Email: Nathan Hommez</a>
+          </div>
+          <div class="container-github center">
+            <a href="https://github.com/Cyptrax"
+              ><img
+                src="./Images/github-icon.png"
+                alt="cat github icon"
+                width="25"
+            /></a>
+            <a href="https://github.com/Cyptrax">Github: Cyptrax</a>
+          </div>
+          <form action="./cv/">
+            <button class="button-contact">Meer info over mij</button>
+          </form>
+        </div>
+      </section>
+      <span class="dot5"></span>
     </main>
     <footer>
-      <address>
-        Copyright © 2023 Nathan Hommez. Alle rechten voorbehouden.
-      </address>
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./Images/logo_Nathan.png" alt="Your Logo" width="200" />
+          </div>
+          <div class="footer-about">
+            <h3>About Me</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              fringilla, ante eu sollicitudin.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>Email: your@email.com</li>
+              <li>Phone: (123) 456-7890</li>
+              <li>Address: 123 Street, City, Country</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

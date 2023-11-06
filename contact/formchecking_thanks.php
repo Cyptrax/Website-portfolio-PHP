@@ -8,7 +8,7 @@
 <html lang="en">
 
 <head>
-    <title>Testform</title>
+    <title>Formcheckingthanks</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="../css/style.css">
@@ -25,15 +25,15 @@
             <a id="navimg" href="../"><img class="logo" src="../Images/logo_Nathan.png" alt="Homepage"
                     width="150" /></a>
             <ul>
+                <li><a href="../">Home</a></li>
                 <li><a href="../cv/">Over mij</a></li>
                 <li><a href="../projecten/">Projecten</a></li>
                 <li><a href="../contact/contactform.php">Contact</a></li>
                 <li><a href="../blog/">Blog</a></li>
             </ul>
-            <div class="button">
-                <form style="display: inline" action="./signin/" method="get"></form>
-                <button class="vibrate-1">Sign in</button>
-            </div>
+            <form style="display: inline" action="./" method="get">
+                <button class="vibrate-1 button">Sign in</button>
+            </form>
         </nav>
     </header>
     <main>

@@ -133,3 +133,7 @@ input[name="filter"]:checked + label {
   color: white;
   font-size: 1.9rem;
 }
+.item1 {
+  position: relative;
+  bottom: -3rem;
+}
