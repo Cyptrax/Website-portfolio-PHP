@@ -99,3 +99,50 @@ body {
     transform: translate(0);
   }
 }
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 0.78125rem 0;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo,
+.footer-about,
+.footer-contact {
+  margin: 0 0.390625rem;
+}
+
+.footer-about h3,
+.footer-contact h3 {
+  font-size: 2.6rem;
+}
+
+.footer-about p {
+  font-size: 2rem;
+}
+.footer-about {
+  margin: 0.2rem 2rem;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin-right: auto;
+}
+
+.footer-contact li {
+  font-size: 1.8rem;
+  margin-bottom: 0.390625rem;
+}

@@ -11,7 +11,8 @@
 }
 .container-mij {
   background-color: #4c6f86;
-  border-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
   align-items: center;
   display: flex;
   padding: 2rem;
