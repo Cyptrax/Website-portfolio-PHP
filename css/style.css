@@ -146,3 +146,7 @@ footer {
   font-size: 1.8rem;
   margin-bottom: 0.390625rem;
 }
+.footer-contact li a {
+  color: white;
+  text-decoration: none;
+}
