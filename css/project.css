@@ -137,3 +137,6 @@ input[name="filter"]:checked + label {
   position: relative;
   bottom: -3rem;
 }
+h2 {
+  text-align: center;
+}

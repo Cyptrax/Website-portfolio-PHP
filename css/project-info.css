@@ -29,6 +29,7 @@ h3 {
 }
 .info-container img {
   margin-top: 15rem;
+  margin-right: 2rem;
 }
 .text-container {
   margin-top: 7rem;
@@ -42,4 +43,7 @@ h3 {
 .text-container p {
   max-width: 80rem;
   font-size: 2rem;
+}
+.text-container ol li {
+  padding: 1rem;
 }
