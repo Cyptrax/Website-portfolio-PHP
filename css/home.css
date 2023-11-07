@@ -1,6 +1,7 @@
 Body {
   font-family: Montserrat, sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 .article {
   height: 100vh;
@@ -55,16 +56,12 @@ p:hover #hide_hover {
 }
 .contianer-timeline {
   border-left: 0.188rem solid #db9632;
-  height: 212rem;
+  height: calc(100% - 47rem);
   position: absolute;
   left: clamp(2rem, 21.2vw, 21.2rem);
   top: 14rem;
 }
-@media only screen and (max-width: 1256px) {
-  .contianer-timeline {
-    height: 410%;
-  }
-}
+
 .dot {
   height: 1.5rem;
   width: 1.5rem;
@@ -275,4 +272,3 @@ p:hover #hide_hover {
   left: clamp(1rem, 20.5vw, 20.5rem);
   top: 3rem;
 }
-
