@@ -272,3 +272,9 @@ p:hover #hide_hover {
   left: clamp(1rem, 20.5vw, 20.5rem);
   top: 3rem;
 }
+.button-contact:hover {
+  transform: scale(1.1);
+}
+.container-contactmij img:hover {
+  transform: scale(1.2);
+}
