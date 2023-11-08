@@ -118,7 +118,6 @@ footer {
   align-items: center;
 }
 
-.footer-logo,
 .footer-about,
 .footer-contact {
   margin: 0 0.390625rem;
@@ -149,4 +148,7 @@ footer {
 .footer-contact li a {
   color: white;
   text-decoration: none;
+}
+.footer-logo {
+  margin-right: clamp(0.390625rem, 7vw, 7rem);
 }
