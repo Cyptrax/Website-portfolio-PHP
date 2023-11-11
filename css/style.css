@@ -39,7 +39,7 @@ nav li a:hover {
 .button {
   padding: 0.7rem 1.5rem;
   background-color: rgba(0, 136, 169, 1);
-  color: white;
+  color: black;
   border: none;
   border-radius: 50px;
   cursor: not-allowed;

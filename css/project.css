@@ -77,6 +77,7 @@ h1 {
   background-color: #af6f09;
   margin: 1rem 1rem;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  color: black;
 }
 .filter-bar label {
   margin-right: 10px;
@@ -130,7 +131,7 @@ input[name="filter"]:checked + label {
   box-sizing: border-box;
   margin-top: 1.356rem;
   margin-bottom: 0.5rem;
-  color: white;
+  color: black;
   font-size: 1.9rem;
 }
 .item1 {
@@ -144,4 +145,5 @@ input[name="filter"]:checked + label {
 }
 h2 {
   text-align: center;
+  color: black;
 }
