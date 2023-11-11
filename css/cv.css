@@ -127,3 +127,137 @@ p {
 .container-talen {
   margin: 1rem;
 }
+.undername {
+  padding: 1rem;
+}
+.prog-bar {
+  border: 0.3rem solid black;
+  height: 2rem;
+}
+.prog-bar-1 {
+  width: 80%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-2 6s;
+}
+@keyframes progressAnimationStrike {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+.prog-bar-2 {
+  width: 50%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-2 6s;
+}
+@keyframes progressAnimationStrike-2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+.prog-bar-3 {
+  width: 70%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-3 6s;
+}
+@keyframes progressAnimationStrike-3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+.prog-bar-4 {
+  width: 90%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-4 6s;
+}
+@keyframes progressAnimationStrike-4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+.prog-bar-5 {
+  width: 75%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-5 6s;
+}
+@keyframes progressAnimationStrike-5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+.prog-bar-6 {
+  width: 98%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-6 6s;
+}
+@keyframes progressAnimationStrike-6 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 98%;
+  }
+}
+.prog-bar-7 {
+  width: 80%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-7 6s;
+}
+@keyframes progressAnimationStrike-7 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+.prog-bar-8 {
+  width: 50%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-8 6s;
+}
+@keyframes progressAnimationStrike-8 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+.prog-bar-9 {
+  width: 40%;
+  height: 2rem;
+  background-color: #db9632;
+  animation: progressAnimationStrike-9 6s;
+}
+@keyframes progressAnimationStrike-9 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+

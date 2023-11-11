@@ -40,9 +40,9 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <ul>
             <?php foreach ($items as $item) { ?>
             <li>
-                Naam: <?php echo $item['sender']; ?><br>
-                Email: <?php echo $item['email']; ?><br>
-                Bericht: <?php echo $item['message']; ?><br>
+                Naam: <?php echo htmlentities($item['sender']); ?><br>
+                Email: <?php echo htmlentities($item['email']); ?><br>
+                Bericht: <?php echo htmlentities($item['message']); ?><br>
                 Tijd: <?php echo (new DateTime($item['added_on']))->format('d-m-Y H:i:s'); ?>
             </li>
             <?php } ?>

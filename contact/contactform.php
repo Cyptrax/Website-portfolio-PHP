@@ -106,13 +106,13 @@ if (isset($_POST['btnSubmit'])) {
             <h1>Contacteer ons</h1>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                 <label for="name">Naam:</label>
-                <input type="text" id="name" name="name" placeholder="Naam" value="<?php echo $name; ?>"
+                <input type="text" id="name" name="name" placeholder="Naam" value="<?php echo htmlentities($name); ?>"
                     class="input-text" />
                 <span class="message error"><?php echo $msgName; ?></span>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email adres" value="<?php echo $email; ?>"
-                    class="input-text" />
+                <input type="email" id="email" name="email" placeholder="Email adres"
+                    value="<?php echo htmlentities($email); ?>" class="input-text" />
 
                 <span class="message error"><?php echo $msgEmail; ?></span>
 
@@ -120,7 +120,7 @@ if (isset($_POST['btnSubmit'])) {
 
                 <label for="message">Bericht:</label>
                 <textarea name="message" id="message" placeholder="Je bericht" rows="5"
-                    cols="40"><?php echo $message; ?></textarea>
+                    cols="40"><?php echo htmlentities($message); ?></textarea>
                 <span class="message error"><?php echo $msgMessage; ?></span>
 
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" />
