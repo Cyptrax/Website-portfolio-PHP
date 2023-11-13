@@ -153,13 +153,13 @@ p:hover #hide_hover {
   top: 7rem;
   right: 15rem;
   left: -5rem;
-  padding: 0.3rem;
+  padding: 0.5rem;
   text-decoration: none;
   color: white;
   font-size: 2rem;
   z-index: 5;
   background-color: #4c6f86;
-  border-radius: 0.313rem;
+  border-radius: 0.7rem;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
 }
 .shadow-pop:hover {

@@ -44,6 +44,7 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 Naam: <?php echo htmlentities($item['sender']); ?><br>
                 Email: <?php echo htmlentities($item['email']); ?><br>
                 Bericht: <?php echo htmlentities($item['message']); ?><br>
+                Tijd: <?php echo htmlentities($item['connect']); ?><br>
                 Tijd: <?php echo (new DateTime($item['added_on']))->format('d-m-Y H:i:s'); ?>
             </li>
             <?php } ?>
