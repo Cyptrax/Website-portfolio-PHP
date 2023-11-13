@@ -19,11 +19,11 @@
 }
 .container-mij-text {
   margin-left: 5rem;
-  color: #db9632;
+  color: #fffdfa;
   font-size: 2.3rem;
 }
 h2 {
-  color: #db9632;
+  color: #af6904;
 }
 .container-overmij {
   display: flex;
@@ -62,7 +62,7 @@ p {
   font-size: 2.2rem;
 }
 .container-opleiding div :nth-child(2) {
-  color: gray;
+  color: #6d0d0d;
 }
 .container-opleiding img {
   display: block;
@@ -88,7 +88,7 @@ p {
   font-size: 2.2rem;
 }
 .jaar {
-  color: gray;
+  color: #6d0d0d;
 }
 .container-werk img {
   display: block;
@@ -260,4 +260,3 @@ p {
     width: 40%;
   }
 }
-

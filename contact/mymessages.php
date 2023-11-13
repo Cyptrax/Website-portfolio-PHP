@@ -30,7 +30,8 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="utf-8">
     <title>Mijn berichten</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>

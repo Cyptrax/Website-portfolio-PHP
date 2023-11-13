@@ -163,7 +163,7 @@ p:hover #hide_hover {
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
 }
 .shadow-pop:hover {
-  animation: shadow-pop 1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: shadow-pop 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 @keyframes shadow-pop {
   0% {

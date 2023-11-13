@@ -10,8 +10,9 @@
 <head>
     <title>Formcheckingthanks</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <style>
     body {
         color: white;

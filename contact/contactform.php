@@ -27,7 +27,7 @@ $message = isset($_POST['message']) ? (string)$_POST['message'] : '';
 $msgEmail = '';
 $msgName = '';
 $msgMessage = '';
-
+$connect = isset($_POST['connect']) ? (array)$_POST['connect'] : array();
 // form is sent: perform formchecking!
 if (isset($_POST['btnSubmit'])) {
 
@@ -49,11 +49,16 @@ if (isset($_POST['btnSubmit'])) {
         $msgMessage = 'Gelieve een boodschap in te voeren';
         $allOk = false;
     }
+    
+    if (trim($connect) === '') {
+        $msgmconnect = 'Gelieve een boodschap in te voeren';
+        $allOk = false;
+    }
 
     // end of form check. If $allOk still is true, then the form was sent in correctly
     if ($allOk) {
-        $stmt = $db->prepare('INSERT INTO messages (email, sender, message, added_on) VALUES (?, ?, ?, ?)');
-        $stmt->execute([$email, $name, $message, (new DateTime())->format('Y-m-d H:i:s')]);
+        $stmt = $db->prepare('INSERT INTO messages (email, sender, message, added_on, connect) VALUES (?, ?, ?, ?, ?)');
+        $stmt->execute([$email, $name, $message, (new DateTime())->format('Y-m-d H:i:s'), json_encode($connect)]);
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
@@ -76,8 +81,9 @@ if (isset($_POST['btnSubmit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <title>Contactformulier</title>
     <style>
 
@@ -122,6 +128,25 @@ if (isset($_POST['btnSubmit'])) {
                 <textarea name="message" id="message" placeholder="Je bericht" rows="5"
                     cols="40"><?php echo htmlentities($message); ?></textarea>
                 <span class="message error"><?php echo $msgMessage; ?></span>
+
+                <fieldset>
+                    <legend>Meals</legend>
+                    <div>
+                        <input type="checkbox" name="connect[]" id="meal0" value="instagram"
+                            <?php echo (in_array('instagram', $connect)) ? 'checked' : '' ?> />
+                        <label for="meal0">Instagram</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="connect[]" id="meal1" value="github"
+                            <?php echo (in_array('github', $connect)) ? 'checked' : '' ?> />
+                        <label for="meal1">Github</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="connect[]" id="meal2" value="other"
+                            <?php echo (in_array('other', $connect)) ? 'checked' : '' ?> />
+                        <label for="meal2">Other</label>
+                    </div>
+                </fieldset>
 
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" />
             </form>
