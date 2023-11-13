@@ -146,7 +146,8 @@ if (isset($_POST['btnSubmit'])) {
                     </div>
                 </fieldset>
 
-                <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" </form>
+                <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" />
+            </form>
         </div>
     </main>
 </body>

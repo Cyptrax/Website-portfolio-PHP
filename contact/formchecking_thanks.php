@@ -41,7 +41,6 @@
     <main>
         <div class="dankwoord">
             <h1>dankje voor het bericht.</h1>
-            <div class="envelope"></div>
         </div>
     </main>
     <div class="nameantwoord">
@@ -94,17 +93,6 @@
 ?>
 
     </div>
-
-    <script>
-    const element = document.querySelector('.envelope')
-    lottie.loadAnimation({
-        container: element,
-        animType: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'https://assets3.lottiefiles.com/packages/lf20_dTQo5w/email sent.json'
-    });
-    </script>
 </body>
 
 </html>
