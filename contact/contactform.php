@@ -29,6 +29,9 @@ $msgName = '';
 $msgMessage = '';
 $connect = isset($_POST['connect']) ? (array)$_POST['connect'] : array();
 // form is sent: perform formchecking!
+$connect = ['instagram', 'github', 'other'];
+implode(",", $connect);
+
 if (isset($_POST['btnSubmit'])) {
 
     $allOk = true;

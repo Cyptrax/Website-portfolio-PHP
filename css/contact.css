@@ -150,7 +150,7 @@ form {
 }
 input[type="submit"] {
   background-color: #db9632;
-  color: white;
+  color: black;
   padding: 1.5rem 2rem;
   border: none;
   cursor: pointer;
