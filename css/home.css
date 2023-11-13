@@ -56,7 +56,7 @@ p:hover #hide_hover {
 }
 .contianer-timeline {
   border-left: 0.188rem solid #db9632;
-  height: calc(100% - 47rem);
+  height: calc(100% - 55rem);
   position: absolute;
   left: clamp(2rem, 21.2vw, 21.2rem);
   top: 14rem;

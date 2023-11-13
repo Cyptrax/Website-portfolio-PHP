@@ -31,30 +31,50 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="utf-8">
     <title>Mijn berichten</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../Images/logo.png" />
 </head>
 
 <body>
-    <div class="messagepage">
-        <h1>My messages</h1>
-        <?php if (sizeof($items) > 0) { ?>
-        <ul>
-            <?php foreach ($items as $item) { ?>
-            <li>
-                Naam: <?php echo htmlentities($item['sender']); ?><br>
-                Email: <?php echo htmlentities($item['email']); ?><br>
-                Bericht: <?php echo htmlentities($item['message']); ?><br>
-                Tijd: <?php echo htmlentities($item['connect']); ?><br>
-                Tijd: <?php echo (new DateTime($item['added_on']))->format('d-m-Y H:i:s'); ?>
-            </li>
-            <?php } ?>
-        </ul>
-        <?php
+    <header>
+        <nav>
+            <a id="navimg" href="../"><img class="logo" src="../Images/logo_Nathan.png" alt="Homepage"
+                    width="150" /></a>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../cv/">Over mij</a></li>
+                <li><a href="../projecten/">Projecten</a></li>
+                <li><a href="../contact/contactform.php">Contact</a></li>
+                <li><a href="../blog/">Blog</a></li>
+            </ul>
+            <form style="display: inline" action="./" method="get">
+                <button class="vibrate-1 button">Sign in</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <div class="messagepage">
+            <h1>My messages</h1>
+            <?php if (sizeof($items) > 0) { ?>
+            <ul>
+                <?php foreach ($items as $item) { ?>
+                <li>
+                    Naam: <?php echo htmlentities($item['sender']); ?><br>
+                    Email: <?php echo htmlentities($item['email']); ?><br>
+                    Bericht: <?php echo htmlentities($item['message']); ?><br>
+                    App: <?php echo htmlentities($item['connect']); ?><br>
+                    Tijd: <?php echo (new DateTime($item['added_on']))->format('d-m-Y H:i:s'); ?>
+                </li>
+                <?php } ?>
+            </ul>
+            <?php
     } else {
         echo '<p>Nog geen berichten ontvangen.</p>' . PHP_EOL;
     }
     ?>
-    </div>
+        </div>
+    </main>
 </body>
 
 </html>
