@@ -6,7 +6,6 @@ define('DB_USER', 'Nathan_Hommez');
 define('DB_PASS', 'M?2mi7n86');
 define('DB_NAME', 'nathan_hommez_contact');
 
-
 date_default_timezone_set('Europe/Brussels');
 
 // Verbinding maken met de databank
@@ -19,7 +18,7 @@ try {
 }
 
 // Opvragen van alle taken uit de tabel tasks
-$stmt = $db->prepare('SELECT sender, email, message, added_on FROM messages ORDER BY added_on DESC');
+$stmt = $db->prepare('SELECT sender, email, message, connect, added_on FROM messages ORDER BY added_on DESC');
 $stmt->execute();
 $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

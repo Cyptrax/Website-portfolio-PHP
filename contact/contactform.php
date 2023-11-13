@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 // Constanten (connectie-instellingen databank)
 define('DB_HOST', 'localhost');
 define('DB_USER', 'Nathan_Hommez');
-define('DB_PASS', 'M?2mi7n86');
+define('DB_PASS', 'M?2mi7n86'); 
 define('DB_NAME', 'nathan_hommez_contact');
 
 date_default_timezone_set('Europe/Brussels');
@@ -29,8 +29,6 @@ $msgName = '';
 $msgMessage = '';
 $connect = isset($_POST['connect']) ? (array)$_POST['connect'] : array();
 // form is sent: perform formchecking!
-$connect = ['instagram', 'github', 'other'];
-implode(",", $connect);
 
 if (isset($_POST['btnSubmit'])) {
 
@@ -41,7 +39,6 @@ if (isset($_POST['btnSubmit'])) {
         $msgEmail = 'Gelieve een geldig emailadres in te voeren';
         $allOk = false;
     }
-
     // name not empty
     if (trim($name) === '') {
         $msgName = 'Gelieve een naam in te voeren';
@@ -52,8 +49,8 @@ if (isset($_POST['btnSubmit'])) {
         $msgMessage = 'Gelieve een boodschap in te voeren';
         $allOk = false;
     }
-    
-    if (trim($connect) === '') {
+
+    if (trim(implode(", ", $connect)) === '') {
         $msgmconnect = 'Gelieve een boodschap in te voeren';
         $allOk = false;
     }
@@ -61,7 +58,7 @@ if (isset($_POST['btnSubmit'])) {
     // end of form check. If $allOk still is true, then the form was sent in correctly
     if ($allOk) {
         $stmt = $db->prepare('INSERT INTO messages (email, sender, message, added_on, connect) VALUES (?, ?, ?, ?, ?)');
-        $stmt->execute([$email, $name, $message, (new DateTime())->format('Y-m-d H:i:s'), json_encode($connect)]);
+        $stmt->execute([$email, $name, $message, (new DateTime())->format('Y-m-d H:i:s'), implode(", ", $connect)]);
 
         // the query succeeded, redirect to this very same page
         if ($db->lastInsertId() !== 0) {
@@ -123,37 +120,33 @@ if (isset($_POST['btnSubmit'])) {
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Email adres"
                     value="<?php echo htmlentities($email); ?>" class="input-text" />
-
                 <span class="message error"><?php echo $msgEmail; ?></span>
-
-
 
                 <label for="message">Bericht:</label>
                 <textarea name="message" id="message" placeholder="Je bericht" rows="5"
                     cols="40"><?php echo htmlentities($message); ?></textarea>
                 <span class="message error"><?php echo $msgMessage; ?></span>
 
-                <fieldset>
-                    <legend>Meals</legend>
+                <fieldset class="checkbox">
+                    <legend>Waar heeft u ons gevonden</legend>
                     <div>
-                        <input type="checkbox" name="connect[]" id="meal0" value="instagram"
-                            <?php echo (in_array('instagram', $connect)) ? 'checked' : '' ?> />
-                        <label for="meal0">Instagram</label>
+                        <input type="checkbox" name="connect[]" id="instagram" value="instagram"
+                            <?php echo (in_array('instagram', $connect)) ? 'checked' : '' ?> <label
+                            for="instagra">Instagram</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="connect[]" id="meal1" value="github"
-                            <?php echo (in_array('github', $connect)) ? 'checked' : '' ?> />
-                        <label for="meal1">Github</label>
+                        <input type="checkbox" name="connect[]" id="github" value="github"
+                            <?php echo (in_array('github', $connect)) ? 'checked' : '' ?> <label
+                            for="github">Github</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="connect[]" id="meal2" value="other"
+                        <input type="checkbox" name="connect[]" id="other" value="other"
                             <?php echo (in_array('other', $connect)) ? 'checked' : '' ?> />
-                        <label for="meal2">Other</label>
+                        <label for="other">Other</label>
                     </div>
                 </fieldset>
 
-                <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" />
-            </form>
+                <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" </form>
         </div>
     </main>
 </body>

@@ -56,7 +56,7 @@ p:hover #hide_hover {
 }
 .contianer-timeline {
   border-left: 0.188rem solid #db9632;
-  height: calc(100% - 55rem);
+  height: calc(100% - 53rem);
   position: absolute;
   left: clamp(2rem, 21.2vw, 21.2rem);
   top: 14rem;
@@ -104,7 +104,7 @@ p:hover #hide_hover {
 .container-projects h2 {
   position: relative;
   left: clamp(10rem, 23vw, 23rem);
-  top: 4.3rem;
+  top: 5rem;
   color: gray;
 }
 .dot2 {
@@ -119,34 +119,28 @@ p:hover #hide_hover {
 }
 
 .card1 {
-  margin-left: clamp(2rem, 17vw, 17rem);
+  margin-left: clamp(2rem, 27vw, 27rem);
   margin-top: clamp(0rem, 5vh, 5rem);
-  padding-left: 10rem;
 }
 .card2 {
-  margin-left: clamp(2rem, 3vw, 3rem);
+  margin-left: clamp(2rem, 13vw, 13rem);
   margin-top: clamp(0rem, 5vh, 5rem);
-  padding-left: 10rem;
 }
 .card3 {
-  margin-left: clamp(2rem, 17vw, 17rem);
-  padding-left: 10rem;
+  margin-left: clamp(2rem, 27vw, 27rem);
   margin-top: clamp(2rem, 0vh, 0rem);
 }
 .card4 {
   margin-top: 2rem;
-  margin-left: clamp(2rem, 3vw, 3rem);
-  padding-left: 10rem;
+  margin-left: clamp(2rem, 13vw, 13rem);
 }
 .card5 {
-  margin-left: clamp(2rem, 17vw, 17rem);
-  padding-left: 10rem;
+  margin-left: clamp(2rem, 27vw, 27rem);
   margin-top: 5rem;
 }
 .card6 {
   margin-top: 5rem;
-  margin-left: clamp(2rem, 3vw, 3rem);
-  padding-left: 10rem;
+  margin-left: clamp(2rem, 13vw, 13rem);
 }
 .textimg {
   position: relative;
@@ -185,7 +179,7 @@ p:hover #hide_hover {
 .blog h2 {
   position: relative;
   left: clamp(10rem, 23vw, 23rem);
-  top: 3rem;
+  top: 3.8rem;
   color: gray;
 }
 .blog1 {
@@ -232,7 +226,7 @@ p:hover #hide_hover {
   display: inline-block;
   position: relative;
   left: clamp(1rem, 20.5vw, 20.5rem);
-  top: -4.78rem;
+  top: -5.7rem;
 }
 .contactmij-text {
   margin-left: clamp(2rem, 25vw, 25rem);
