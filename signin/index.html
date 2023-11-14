@@ -6,17 +6,48 @@
     <title>Sign in</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../Images/logo.png" />
-    <link rel="stylesheet" href="../css/signin.css">
-    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="../css/signin.css" />
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: none;
+      }
+
+      #bottomImage {
+        position: fixed;
+        height: 0; /* initially hidden */
+        transition: height 3s;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        display: none; /* initially hidden */
+      }
+      #fallingObject {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: top 2s ease-out; /* Adjust the duration as needed */
+        display: none; /* Hide the image initially */
+      }
     </style>
   </head>
   <body>
     <header>
       <nav>
         <a id="navimg" href="../"
-          ><img class="logo" src="../Images/logo Nathan$.png" alt="Homepage" width="150"
+          ><img
+            class="logo"
+            src="../Images/logo Nathan$.png"
+            alt="Homepage"
+            width="150"
         /></a>
         <ul>
           <li><a href="../cv/">Over mij</a></li>
@@ -25,19 +56,100 @@
           <li><a href="../blog/">Blog</a></li>
         </ul>
         <div class="button">
-        <form style="display: inline" action="../signin/" method="get" >
-        <button class="vibrate-1">Sign in</button>
+          <button
+            onclick="animation3(), startAnimation(), startFading()"
+            class="vibrate-1 button"
+          >
+            Nuke the page
+          </button>
         </div>
       </nav>
-      <main>
-        <div class="username">
-            <label for=" name">name</label>
-            <input type="text" value="" id="name" name="name">
-        </div>
-        <div class="password">
-            <label for="pass">password</label>
-            <input type="password" value="" id="pass" name="pass">
-        </div>
-            <input type="submit" name="bntSubmit" value="send">
-      </main>
     </header>
+    <main>
+      <div id="overlay"></div>
+      <img id="bottomImage" src="./Nuke-PNG-Photos.png" alt="Bottom Image" />
+      <img
+        id="fallingObject"
+        src="./nuke.png"
+        alt="Falling Object"
+        width="80"
+      />
+    </main>
+
+    <script>
+      let fadeCount = 0;
+
+      function startFading() {
+        fadeCount = 0; // Reset fadeCount
+        initiateFading();
+      }
+
+      function initiateFading() {
+        if (fadeCount < 3) {
+          document.body.style.backgroundColor = "red";
+          setTimeout(function () {
+            document.body.style.backgroundColor = "white";
+            fadeCount++;
+            if (fadeCount < 3) {
+              setTimeout(initiateFading, 1000); // Adjust the duration as needed
+            } else {
+              setTimeout(function () {
+                document.body.style.backgroundColor = "";
+              }, 1000); // Adjust the duration as needed
+            }
+          }, 1000); // Adjust the duration as needed
+        }
+      }
+
+      function startAnimation() {
+        // Get the falling object element
+        var fallingObject = document.getElementById("fallingObject");
+
+        // Show the falling object
+        fallingObject.style.display = "block";
+
+        // Wait for 4 seconds before starting the animation
+        setTimeout(function () {
+          // Set the final position for the falling object
+          fallingObject.style.top = "80vh"; // Adjust the stopping point as needed
+
+          // Wait for the animation to complete (2 seconds in this case)
+          setTimeout(function () {
+            // Reset the position
+            fallingObject.style.top = "0";
+
+            // Hide the falling object
+            fallingObject.style.display = "none";
+          }, 2000);
+        }, 4000);
+      }
+
+      function animation3() {
+        // Show image
+        document.getElementById("bottomImage").style.display = "block";
+
+        // Show overlay after 6 seconds
+        setTimeout(function () {
+          document.getElementById("overlay").style.display = "block";
+
+          // Reset overlay and expand bottom image after 3 seconds
+          setTimeout(function () {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("bottomImage").style.height = "100%";
+
+            // Hide image after 4 seconds (animation duration)
+            setTimeout(function () {
+              document.getElementById("bottomImage").style.display = "none";
+
+              // Set image back to its original height after 1 second
+              setTimeout(function () {
+                document.getElementById("bottomImage").style.display = "block";
+                document.getElementById("bottomImage").style.height = "0";
+              }, 200);
+            }, 4000);
+          }, 3000);
+        }, 6000);
+      }
+    </script>
+  </body>
+</html>

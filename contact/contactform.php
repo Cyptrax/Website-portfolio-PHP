@@ -103,7 +103,7 @@ if (isset($_POST['btnSubmit'])) {
                 <li><a href="../contact/contactform.php">Contact</a></li>
                 <li><a href="../blog/">Blog</a></li>
             </ul>
-            <form style="display: inline" action="./" method="get">
+            <form style="display: inline" action="#" method="get">
                 <button class="vibrate-1 button">Sign in</button>
             </form>
         </nav>

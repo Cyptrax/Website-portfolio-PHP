@@ -5,7 +5,8 @@
 }
 
 .item-list li {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
   margin: 1rem 10px;
@@ -90,14 +91,11 @@ h1 {
 
 .item {
   padding: 1rem;
-  margin-bottom: 10px;
   border-radius: 1rem;
 }
 
 /* Hide items by default */
-.item {
-  display: none;
-}
+
 
 /* Show items based on selected filters */
 input[name="filter"]:checked ~ .item-list .item {
@@ -134,14 +132,9 @@ input[name="filter"]:checked + label {
   color: black;
   font-size: 1.9rem;
 }
-.item1 {
-  position: relative;
-  bottom: -3rem;
-}
-@media only screen and (max-width: 796px) {
-  .item1 {
-    bottom: 0rem;
-  }
+.content {
+  margin-top: auto;
+
 }
 h2 {
   text-align: center;
