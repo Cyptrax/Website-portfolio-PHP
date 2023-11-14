@@ -131,12 +131,12 @@ if (isset($_POST['btnSubmit'])) {
                     <legend>Waar heeft u ons gevonden</legend>
                     <div>
                         <input type="checkbox" name="connect[]" id="instagram" value="instagram"
-                            <?php echo (in_array('instagram', $connect)) ? 'checked' : '' ?> <label
-                            for="instagra">Instagram</label>
+                            <?php echo (in_array('instagram', $connect)) ? 'checked' : '' ?> /> <label
+                            for="instagram">Instagram</label>
                     </div>
                     <div>
                         <input type="checkbox" name="connect[]" id="github" value="github"
-                            <?php echo (in_array('github', $connect)) ? 'checked' : '' ?> <label
+                            <?php echo (in_array('github', $connect)) ? 'checked' : '' ?> /><label
                             for="github">Github</label>
                     </div>
                     <div>

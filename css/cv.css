@@ -138,7 +138,7 @@ p {
   width: 80%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-2 6s;
+  animation: progressAnimationStrike-1 3s;
 }
 @keyframes progressAnimationStrike {
   from {
@@ -152,7 +152,7 @@ p {
   width: 50%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-2 6s;
+  animation: progressAnimationStrike-2 3s;
 }
 @keyframes progressAnimationStrike-2 {
   from {
@@ -166,7 +166,7 @@ p {
   width: 70%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-3 6s;
+  animation: progressAnimationStrike-3 3s;
 }
 @keyframes progressAnimationStrike-3 {
   from {
@@ -180,7 +180,7 @@ p {
   width: 90%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-4 6s;
+  animation: progressAnimationStrike-4 3s;
 }
 @keyframes progressAnimationStrike-4 {
   from {
@@ -194,7 +194,7 @@ p {
   width: 75%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-5 6s;
+  animation: progressAnimationStrike-5 3s;
 }
 @keyframes progressAnimationStrike-5 {
   from {
@@ -208,7 +208,7 @@ p {
   width: 98%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-6 6s;
+  animation: progressAnimationStrike-6 3s;
 }
 @keyframes progressAnimationStrike-6 {
   from {
@@ -222,7 +222,7 @@ p {
   width: 80%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-7 6s;
+  animation: progressAnimationStrike-7 3s;
 }
 @keyframes progressAnimationStrike-7 {
   from {
@@ -236,7 +236,7 @@ p {
   width: 50%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-8 6s;
+  animation: progressAnimationStrike-8 3s;
 }
 @keyframes progressAnimationStrike-8 {
   from {
@@ -250,7 +250,7 @@ p {
   width: 40%;
   height: 2rem;
   background-color: #db9632;
-  animation: progressAnimationStrike-9 6s;
+  animation: progressAnimationStrike-9 3s;
 }
 @keyframes progressAnimationStrike-9 {
   from {
