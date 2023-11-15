@@ -17,33 +17,47 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
+    />
+
+    <style>
+      .lightbox img {
+        width: 100%;
+        margin-bottom: 30px;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        max-height: 198px;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <header
-          class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap" />
-            </svg>
-            <span class="fs-4">Imagine dragin</span>
-          </a>
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <span class="fs-4">Imagine dragin</span>
+        </a>
 
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link">Deez</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Nuts</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">across</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">your</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Face</a></li>
-          </ul>
-        </header>
-      </div>
-    </header>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link">Deez</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Nuts</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">across</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">your</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Face</a></li>
+        </ul>
+      </header>
+    </div>
     <main>
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -55,15 +69,11 @@
             />
           </div>
           <div class="carousel-item">
-            <img
-              src="./BIG-RED-NUTS.png"
-              class="d-block w-100"
-              alt="Foto 2"
-            />
+            <img src="./BIG-RED-NUTS.png" class="d-block w-100" alt="Foto 2" />
           </div>
           <div class="carousel-item">
             <img
-              src="./across yo face.png"
+              src="./across-yo-face.png"
               class="d-block w-100"
               alt="Foto 3"
             />
@@ -72,7 +82,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carousel"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,63 +91,60 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carousel"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Volgende</span>
         </button>
       </div>
-      <div class="container mt-5 text-center bg-dark text-light p-5">
-        <h2 class="mb-4">Vorige concerten</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <a
-              href="./Mafell_092552 800-800.jpg"
-              data-caption="Afbeelding 1"
-            >
-              <img
-                src="./Mafell_092552 800-800.jpg"
-                class="img-fluid"
-                alt="Afbeelding 1"
-              />
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <a
-              href="./consider.webp"
-              data-caption="Afbeelding 2"
-            >
-              <img
-                src="./consider.webp"
-                class="img-fluid"
-                alt="Afbeelding 2"
-              />
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
-            <a
-              href="./ezgif-3-101357ca4d 800-800.jpg"
-              data-caption="Afbeelding 3"
-            >
-              <img
-                src="./ezgif-3-101357ca4d 800-800.jpg"
-                class="img-fluid"
-                alt="Afbeelding 3"
-              />
-            </a>
+
+      <div class="tz-gallery margin-top-xl">
+        <div class="container mt-4 mb-4">
+          <h1>Vorige concerten</h1>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="./Mafell_092552-800-800.jpg">
+                <img
+                  src="./Mafell_092552-800-800.jpg"
+                  data-echo="./Mafell_092552 800-800.jpg"
+                  alt="nuts"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="./consider.webp">
+                <img
+                  src="./consider.webp"
+                  data-echo="./consider.webp"
+                  alt="nuts"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="./ezgif-3-101357ca4d-800-800.jpg">
+                <img
+                  src="./ezgif-3-101357ca4d-800-800.jpg"
+                  data-echo="./ezgif-3-101357ca4d 800-800.jpg"
+                  alt="nuts"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="container-fluid bg-light p-5 mt-5">
-        <h1 class="display-4">1-5 mensen trappen in een deez nuts joke</h1>
-        <p class="lead">
-            DIT ZIJN ALLEMAAL DEEZ NUTS JOKES, DE UITGEROKKEN FOTO'S ZIJN VOOR KOMIEKE WAARDE
-        </p>
+        <h1 class="display-4">
+          DIT ZIJN ALLEMAAL DEEZ NUTS JOKES, DE UITGEROKKEN FOTO'S ZIJN VOOR
+          KOMIEKE WAARDE
+        </h1>
+        <p class="lead">1-5 mensen trappen in een deez nuts joke</p>
         <hr class="my-4" />
         <p>sawcon deez nutz</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">GOT YOU</a>
-    </div>
+      </div>
+
       <div class="container mt-5">
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
           <div class="col">
@@ -164,6 +171,7 @@
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
@@ -185,6 +193,7 @@
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm border-primary">
               <div class="card-header py-3 text-bg-primary border-primary">
@@ -207,37 +216,63 @@
             </div>
           </div>
         </div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <h2>I need some Help</h2>
-                    <form>
-                        <!-- Contact Form Fields -->
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name (Deez)</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email (Deez@gmail.com)</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Your Message (i want Deez)</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-                        </div>
-        
-                        <!-- Sign-up Form Fields -->
-                        <div class="mb-3">
-                            <label for="signupEmail" class="form-label">Sign up for Deez Nuts Jokes with Your Email</label>
-                            <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email">
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
 
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <h2>I need some Help</h2>
+              <form>
+                <!-- Contact Form Fields -->
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name (Deez)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Your Email (Deez@gmail.com)</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label"
+                    >Your Message (i want Deez)</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <!-- Sign-up Form Fields -->
+                <div class="mb-3">
+                  <label for="signupEmail" class="form-label"
+                    >Sign up for Deez Nuts Jokes with Your Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Bootstrap JS and BaguetteBox JS -->
@@ -245,6 +280,32 @@
     <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js"></script>
     <script>
       baguetteBox.run(".img-fluid");
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run(".baguetteBoxOne");
+    </script>
+    <script>
+      baguetteBox.run(".tz-gallery");
+    </script>
+    <script src="https://cdn.rawgit.com/toddmotto/echo/1.8.0/dist/echo.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        echo.init(); // Initialize Echo.js for lazy-loading
+
+        // Load BaguetteBox after Echo.js has been initialized
+        var script = document.createElement("script");
+        script.src =
+          "https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js";
+        document.head.appendChild(script);
+
+        script.onload = function () {
+          baguetteBox.run(".tz-gallery");
+        };
+      });
     </script>
   </body>
 </html>
