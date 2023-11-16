@@ -142,11 +142,15 @@
               </div>
             </li>
             <li class="item" data-filters="filter1 filter3">
-              <a href="./keuken-companion/" class="overlay-link">Read more about title</a>
+              <a href="./keuken-companion/" class="overlay-link"
+                >Read more about title</a
+              >
               <h2>Uw keukengenoot</h2>
               <img src="../Images/ai-keuken.jpeg" alt="google home ai" />
               <div class="content">
-                <a class="underimgclick" href="./keuken-companion/">Lees meer</a>
+                <a class="underimgclick" href="./keuken-companion/"
+                  >Lees meer</a
+                >
               </div>
             </li>
           </ul>
@@ -167,7 +171,7 @@
                   .getAttribute("data-filters")
                   .split(" ");
                 const isItemVisible = itemFilters.includes(selectedFilter);
-                item.style.display = isItemVisible ? "block" : "none";
+                item.style.display = isItemVisible ? "" : "none";
               });
             });
           });

@@ -92,10 +92,13 @@ h1 {
 .item {
   padding: 1rem;
   border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.item:hover {
+  transform: scale(1.05);
 }
 
 /* Hide items by default */
-
 
 /* Show items based on selected filters */
 input[name="filter"]:checked ~ .item-list .item {
@@ -134,7 +137,6 @@ input[name="filter"]:checked + label {
 }
 .content {
   margin-top: auto;
-
 }
 h2 {
   text-align: center;
@@ -150,6 +152,7 @@ h2 {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .filter-bar {
   list-style: none;
   margin: 0;
@@ -164,4 +167,3 @@ h2 {
   padding-inline: 1rem;
   list-style: none;
 }
-

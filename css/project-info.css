@@ -16,13 +16,46 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-.project-container img {
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project-container .img {
   border-radius: 2rem;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
   height: 35rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation: fadeInFromLeft 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.img-right {
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
+  height: 35rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInFromRight 1.5s ease-in-out forwards;
 }
 .info-container {
   display: flex;
