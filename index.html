@@ -104,13 +104,13 @@
             </div>
           </div>
           <div class="gencard card4">
-            <a href="./projecten/" class="textimg">project 4</a>
+            <a href="./projecten/" class="textimg">Bootstrap</a>
             <div class="cardalg">
-              <a href="./projecten/"
+              <a href="./projecten/bootstrap/"
                 ><img
                   class="shadow-pop"
-                  src="https://picsum.photos/350/150?1"
-                  alt="project gip"
+                  src="./Images/bootstrap-logo-vector.png"
+                  alt="Bootstrap logo"
               /></a>
             </div>
           </div>
@@ -126,13 +126,13 @@
             </div>
           </div>
           <div class="gencard card6">
-            <a href="./projecten/" class="textimg">project 6</a>
+            <a href="./projecten/" class="textimg">Ai keuken</a>
             <div class="cardalg">
               <a href="./projecten/"
                 ><img
                   class="shadow-pop"
-                  src="https://picsum.photos/350/150?1"
-                  alt="project gip"
+                  src="./Images/ai-keuken.jpeg"
+                  alt="google-home"
               /></a>
             </div>
           </div>
@@ -220,80 +220,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      let fadeCount = 0;
-
-      function startFading() {
-        fadeCount = 0; // Reset fadeCount
-        initiateFading();
-      }
-
-      function initiateFading() {
-        if (fadeCount < 3) {
-          document.body.style.backgroundColor = "red";
-          setTimeout(function () {
-            document.body.style.backgroundColor = "white";
-            fadeCount++;
-            if (fadeCount < 3) {
-              setTimeout(initiateFading, 1000); // Adjust the duration as needed
-            } else {
-              setTimeout(function () {
-                document.body.style.backgroundColor = "";
-              }, 1000); // Adjust the duration as needed
-            }
-          }, 1000); // Adjust the duration as needed
-        }
-      }
-
-      function startAnimation() {
-        // Get the falling object element
-        var fallingObject = document.getElementById("fallingObject");
-
-        // Show the falling object
-        fallingObject.style.display = "block";
-
-        // Wait for 4 seconds before starting the animation
-        setTimeout(function () {
-          // Set the final position for the falling object
-          fallingObject.style.top = "80vh"; // Adjust the stopping point as needed
-
-          // Wait for the animation to complete (2 seconds in this case)
-          setTimeout(function () {
-            // Reset the position
-            fallingObject.style.top = "0";
-
-            // Hide the falling object
-            fallingObject.style.display = "none";
-          }, 2000);
-        }, 4000);
-      }
-
-      function animation3() {
-        // Show image
-        document.getElementById("bottomImage").style.display = "block";
-
-        // Show overlay after 6 seconds
-        setTimeout(function () {
-          document.getElementById("overlay").style.display = "block";
-
-          // Reset overlay and expand bottom image after 3 seconds
-          setTimeout(function () {
-            document.getElementById("overlay").style.display = "none";
-            document.getElementById("bottomImage").style.height = "100%";
-
-            // Hide image after 4 seconds (animation duration)
-            setTimeout(function () {
-              document.getElementById("bottomImage").style.display = "none";
-
-              // Set image back to its original height after 1 second
-              setTimeout(function () {
-                document.getElementById("bottomImage").style.display = "block";
-                document.getElementById("bottomImage").style.height = "0";
-              }, 200);
-            }, 4000);
-          }, 3000);
-        }, 6000);
-      }
-    </script>
   </body>
 </html>
