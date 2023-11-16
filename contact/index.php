@@ -100,7 +100,7 @@ if (isset($_POST['btnSubmit'])) {
                 <li><a href="../">Home</a></li>
                 <li><a href="../cv/">Over mij</a></li>
                 <li><a href="../projecten/">Projecten</a></li>
-                <li><a href="../contact/contactform.php">Contact</a></li>
+                <li><a href="../contact/">Contact</a></li>
                 <li><a href="../blog/">Blog</a></li>
             </ul>
             <form style="display: inline" action="#" method="get">
@@ -110,46 +110,78 @@ if (isset($_POST['btnSubmit'])) {
     </header>
     <main>
         <div class="container-contact">
-            <h1>Contacteer ons</h1>
+            <h1>Contacteer Mij</h1>
+            <p>Wilt u met mij samenwerken laat dit dan zeker weten.</p>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                <label for="name">Naam:</label>
-                <input type="text" id="name" name="name" placeholder="Naam" value="<?php echo htmlentities($name); ?>"
-                    class="input-text" />
-                <span class="message error"><?php echo $msgName; ?></span>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email adres"
-                    value="<?php echo htmlentities($email); ?>" class="input-text" />
-                <span class="message error"><?php echo $msgEmail; ?></span>
-
-                <label for="message">Bericht:</label>
-                <textarea name="message" id="message" placeholder="Je bericht" rows="5"
-                    cols="40"><?php echo htmlentities($message); ?></textarea>
-                <span class="message error"><?php echo $msgMessage; ?></span>
-
-                <fieldset class="checkbox">
-                    <legend>Waar heeft u ons gevonden</legend>
-                    <div>
-                        <input type="checkbox" name="connect[]" id="instagram" value="instagram"
-                            <?php echo (in_array('instagram', $connect)) ? 'checked' : '' ?> /> <label
-                            for="instagram">Instagram</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="connect[]" id="github" value="github"
-                            <?php echo (in_array('github', $connect)) ? 'checked' : '' ?> /><label
-                            for="github">Github</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="connect[]" id="other" value="other"
-                            <?php echo (in_array('other', $connect)) ? 'checked' : '' ?> />
-                        <label for="other">Other</label>
-                    </div>
-                </fieldset>
+                <div>
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name" placeholder="Naam"
+                        value="<?php echo htmlentities($name); ?>" class="input-text" />
+                    <span class="message error"><?php echo $msgName; ?></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email adres"
+                        value="<?php echo htmlentities($email); ?>" class="input-text" />
+                    <span class="message error"><?php echo $msgEmail; ?></span>
+                </div>
+                <div>
+                    <label for="message">Bericht:</label>
+                    <textarea name="message" id="message" placeholder="Je bericht" rows="5"
+                        cols="40"><?php echo htmlentities($message); ?></textarea>
+                    <span class="message error"><?php echo $msgMessage; ?></span>
+                </div>
+                <div>
+                    <fieldset class="checkbox">
+                        <legend>Waar heeft u mij gevonden?</legend>
+                        <div>
+                            <input type="checkbox" name="connect[]" id="instagram" value="instagram"
+                                <?php echo (in_array('instagram', $connect)) ? 'checked' : '' ?> /> <label
+                                for="instagram">Instagram</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="connect[]" id="github" value="github"
+                                <?php echo (in_array('github', $connect)) ? 'checked' : '' ?> /><label
+                                for="github">Github</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="connect[]" id="other" value="other"
+                                <?php echo (in_array('other', $connect)) ? 'checked' : '' ?> />
+                            <label for="other">Other</label>
+                        </div>
+                    </fieldset>
+                </div>
 
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" />
             </form>
         </div>
     </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../Images/logo_Nathan.png" alt="Your Logo" width="200" />
+                </div>
+                <div class="footer-about">
+                    <h3>About Me</h3>
+                    <p>hallo, dit is mijn portfolio website voor webintroduction.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <a href="mailto:NathanHommez@gmail.com">Email: NathanHommez@gmail.com</a>
+                        </li>
+                        <li>Phone: +32 123 32 11 12</li>
+                        <li>
+                            Address: 1600 Pennsylvania Avenue,<br />
+                            N.W. Washington, DC 20500
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 

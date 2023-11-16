@@ -140,7 +140,7 @@ p {
   background-color: #db9632;
   animation: progressAnimationStrike-1 3s;
 }
-@keyframes progressAnimationStrike {
+@keyframes progressAnimationStrike-1 {
   from {
     width: 0;
   }
@@ -247,7 +247,7 @@ p {
   }
 }
 .prog-bar-9 {
-  width: 40%;
+  width: 20%;
   height: 2rem;
   background-color: #db9632;
   animation: progressAnimationStrike-9 3s;
@@ -257,6 +257,6 @@ p {
     width: 0;
   }
   to {
-    width: 40%;
+    width: 20%;
   }
 }

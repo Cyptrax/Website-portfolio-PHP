@@ -10,10 +10,8 @@ body {
 *::after {
   box-sizing: border-box;
 }
-
 /* form-fields */
 /* zie demo bestanden bij de theorie voor meer CSS ;) */
-
 .message.error {
   color: #b90e0a;
 }
@@ -32,8 +30,8 @@ body {
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   background-color: #4c6f86;
+  text-align: center;
 }
-
 h1 {
   color: white;
   text-align: center;
@@ -43,6 +41,7 @@ label {
   margin-bottom: 0.8rem;
   color: white;
   cursor: pointer;
+  margin-top: 3rem;
 }
 
 .input-text,
@@ -64,7 +63,7 @@ legend {
   color: white;
 }
 input {
-  margin-bottom: .1rem;
+  margin-bottom: 0.1rem;
 }
 
 input[type="checkbox"] {
@@ -129,6 +128,10 @@ input[type="checkbox"] {
 .dankwoord h1 {
   color: white;
 }
+.dankwoord {
+  text-align: center;
+  margin-top: 7rem;
+}
 .envelope {
   display: flex;
   align-self: center;
@@ -136,4 +139,13 @@ input[type="checkbox"] {
   width: 20rem;
   margin: auto;
   height: 100vh;
+}
+p {
+  padding: 1rem;
+}
+.gif img {
+  margin: 7rem auto 6rem auto;
+}
+.gif {
+  display: flex;
 }

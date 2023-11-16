@@ -30,7 +30,7 @@
                 <li><a href="../">Home</a></li>
                 <li><a href="../cv/">Over mij</a></li>
                 <li><a href="../projecten/">Projecten</a></li>
-                <li><a href="../contact/contactform.php">Contact</a></li>
+                <li><a href="../contact/">Contact</a></li>
                 <li><a href="../blog/">Blog</a></li>
             </ul>
             <form style="display: inline" action="#" method="get">
@@ -40,11 +40,10 @@
     </header>
     <main>
         <div class="dankwoord">
-            <h1>dankje voor het bericht.</h1>
+            <h1>Dankje voor het bericht.</h1>
         </div>
-    </main>
-    <div class="nameantwoord">
-        <?php
+        <div class="nameantwoord">
+            <?php
 	// Name sent in
 	if ($name) {
 		echo '<p>We zulles zo snel mogelijk op u bericht antwoorden ' . htmlentities($name). '</p>';
@@ -60,10 +59,10 @@
 		echo '<p>We zulles zo snel mogelijk op u bericht antwoorden, stranger</p>';
 	}
 ?>
-    </div>
-    <div id="debug">
+        </div>
+        <div id="debug">
 
-        <?php
+            <?php
 
 	/**
 	 * Helper Functions
@@ -92,7 +91,39 @@
 
 ?>
 
-    </div>
+        </div>
+        <div class="gif">
+            <!-- dit is niet van mij -->
+            <img src="../Images/gif-email.gif" alt="email gif">
+            <!-- dit is niet van mij -->
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../Images/logo_Nathan.png" alt="Your Logo" width="200" />
+                </div>
+                <div class="footer-about">
+                    <h3>About Me</h3>
+                    <p>hallo, dit is mijn portfolio website voor webintroduction.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <a href="mailto:NathanHommez@gmail.com">Email: NathanHommez@gmail.com</a>
+                        </li>
+                        <li>Phone: +32 123 32 11 12</li>
+                        <li>
+                            Address: 1600 Pennsylvania Avenue,<br />
+                            N.W. Washington, DC 20500
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
