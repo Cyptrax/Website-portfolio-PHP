@@ -32,8 +32,6 @@ Body {
   }
 }
 
-/* de animation is niet door mij */
-
 .mijzelf img {
   height: 45vh;
   margin-left: clamp(2rem, 4vw, 4rem);
@@ -98,6 +96,7 @@ p:hover #hide_hover {
   left: clamp(10rem, 23vw, 23rem);
   top: 5rem;
   color: gray;
+  display: block;
 }
 .dot2 {
   height: 1.5rem;
@@ -293,20 +292,20 @@ p:hover #hide_hover {
 
 #bottomImage {
   position: fixed;
-  height: 0; /* initially hidden */
+  height: 0; 
   transition: height 3s;
   position: absolute;
   bottom: 0;
   left: 10%;
-  display: none; /* initially hidden */
+  display: none; 
 }
 #fallingObject {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: top 2s ease-out; /* Adjust the duration as needed */
-  display: none; /* Hide the image initially */
+  transition: top 2s ease-out; 
+  display: none; 
 }
 .overlay-link {
   display: inline-block;

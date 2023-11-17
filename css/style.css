@@ -77,8 +77,8 @@ body {
   position: relative;
 }
 .vibrate-1 {
-  animation: none; /* Reset the animation initially */
-  transition: transform 0.3s ease; /* Add a transition for smooth effect */
+  animation: none;
+  transition: transform 0.3s ease;
 }
 
 .vibrate-1:hover {

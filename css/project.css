@@ -99,21 +99,16 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Hide items by default */
-
-/* Show items based on selected filters */
 input[name="filter"]:checked ~ .item-list .item {
   display: block;
 }
 
-/* Style the label for the checkboxes */
 label {
   cursor: pointer;
   color: white;
   font-weight: bold;
 }
 
-/* Style the checkboxes */
 input[type="checkbox"] {
   margin-right: 5px;
 }

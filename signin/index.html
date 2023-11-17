@@ -61,9 +61,12 @@
       </nav>
     </header>
     <main>
-      <button onclick="animation3(), startAnimation(), startFading()">
+      <button onclick="animation3(), startAnimation(), startFading() ">
         Nuke the page
       </button>
+      <audio id="NUKE" preload="auto">
+        <source src="../Images/NUKE-INCOMMING.mp3" type="audio/mp3" />
+      </audio>
       <div id="overlay"></div>
       <img id="bottomImage" src="./Nuke-PNG-Photos.png" alt="Bottom Image" />
       <img
@@ -77,6 +80,7 @@
       let fadeCount = 0;
 
       function startFading() {
+        document.getElementById("NUKE").play();
         fadeCount = 0; // Reset fadeCount
         initiateFading();
       }
