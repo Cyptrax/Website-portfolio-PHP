@@ -28,12 +28,13 @@ $msgEmail = '';
 $msgName = '';
 $msgMessage = '';
 $connect = isset($_POST['connect']) ? (array)$_POST['connect'] : array();
+$msgmconnect = '';
+
 // form is sent: perform formchecking!
 
 if (isset($_POST['btnSubmit'])) {
 
     $allOk = true;
-
     // Check for a valid email address
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $msgEmail = 'Gelieve een geldig emailadres in te voeren';
@@ -52,6 +53,10 @@ if (isset($_POST['btnSubmit'])) {
 
     if (trim(implode(", ", $connect)) === '') {
         $msgmconnect = 'Gelieve een boodschap in te voeren';
+        $allOk = false;
+    }
+    if (empty($connect)) {
+        $msgmconnect = 'Gelieve minstens één checkbox te selecteren';
         $allOk = false;
     }
 
@@ -74,6 +79,7 @@ if (isset($_POST['btnSubmit'])) {
 
 }
 
+
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -81,13 +87,13 @@ if (isset($_POST['btnSubmit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../Images/logo.png" />
     <title>Contactformulier</title>
     <style>
-
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
     </style>
 </head>
 
@@ -150,6 +156,7 @@ if (isset($_POST['btnSubmit'])) {
                             <label for="other">Other</label>
                         </div>
                     </fieldset>
+                    <span class="message error"><?php echo $msgmconnect; ?></span>
                 </div>
 
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Verstuur" />

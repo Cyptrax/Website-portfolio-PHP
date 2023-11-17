@@ -1,16 +1,18 @@
 .cv-container {
-  margin: 5rem 20rem 10rem 20rem;
+  position: relative;
+  margin: 5rem auto;
   box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.9);
   border-radius: 1rem;
   background-color: rgba(255, 255, 255, 0.858);
   color: black;
+  width: 70%;
 }
 .container-mij img {
   border-radius: 1rem;
   max-width: 30rem;
 }
 .container-mij {
-  background-color: #4c6f86;
+  background-color: #774703;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   align-items: center;
@@ -38,8 +40,11 @@ h2 {
 .intro h2 {
   margin-bottom: 1rem;
 }
+.intro {
+  width: 58%;
+}
 .socials {
-  margin: 5rem 0rem 0rem 5rem;
+  margin: 5rem 0rem 0rem 7rem;
 }
 .socials p {
   margin: 0;
@@ -136,7 +141,7 @@ p {
 }
 .prog-bar-1 {
   width: 80%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-1 3s;
 }
@@ -150,7 +155,7 @@ p {
 }
 .prog-bar-2 {
   width: 50%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-2 3s;
 }
@@ -164,7 +169,7 @@ p {
 }
 .prog-bar-3 {
   width: 70%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-3 3s;
 }
@@ -178,7 +183,7 @@ p {
 }
 .prog-bar-4 {
   width: 90%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-4 3s;
 }
@@ -192,7 +197,7 @@ p {
 }
 .prog-bar-5 {
   width: 75%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-5 3s;
 }
@@ -206,7 +211,7 @@ p {
 }
 .prog-bar-6 {
   width: 98%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-6 3s;
 }
@@ -220,7 +225,7 @@ p {
 }
 .prog-bar-7 {
   width: 80%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-7 3s;
 }
@@ -234,7 +239,7 @@ p {
 }
 .prog-bar-8 {
   width: 50%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-8 3s;
 }
@@ -248,7 +253,7 @@ p {
 }
 .prog-bar-9 {
   width: 20%;
-  height: 2rem;
+  height: 100%;
   background-color: #db9632;
   animation: progressAnimationStrike-9 3s;
 }

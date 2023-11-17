@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   font-family: Montserrat, sans-serif;
   font-size: 62.5%;
@@ -35,7 +40,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #0088a9;
+  color: rgba(0, 136, 169, 1);
 }
 .button {
   padding: 0.7rem 1.5rem;

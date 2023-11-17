@@ -1,45 +1,31 @@
 body {
-  font-size: 1.6rem;
-  margin: 0;
   background-color: #051723;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .message.error {
-  color: #b90e0a;
-}
-body {
-  font-family: Arial, sans-serif;
-}
-
-.error {
-  color: red;
+  color: #7c0000;
 }
 
 .container-contact {
   max-width: 60rem;
-  margin: 2rem auto;
+  margin: 5rem auto;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  background-color: #4c6f86;
+  background-color: #db9632;
 }
 h1 {
-  color: white;
+  color: black;
   text-align: center;
 }
 .container-contact p {
   text-align: center;
+  color: black;
 }
 
 label {
   margin-bottom: 0.8rem;
-  color: white;
+  color: black;
   cursor: pointer;
   margin-top: 3rem;
 }
@@ -60,7 +46,7 @@ fieldset {
 
 legend {
   font-weight: bold;
-  color: white;
+  color: black;
 }
 input {
   margin-bottom: 0.1rem;
@@ -70,12 +56,8 @@ input[type="checkbox"] {
   margin-right: 0.8rem;
 }
 
-.message {
-  color: red;
-}
-
 #btnSubmit {
-  background-color: #db9632;
+  background-color: rgba(0, 136, 169, 1);
   color: black;
   padding: 1rem 2rem;
   border: none;

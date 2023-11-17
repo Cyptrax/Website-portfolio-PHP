@@ -33,6 +33,9 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="icon" href="../Images/logo.png" />
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+    </style>
 </head>
 
 <body>
